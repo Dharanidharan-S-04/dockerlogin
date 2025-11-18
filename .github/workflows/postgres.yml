@@ -23,9 +23,9 @@ jobs:
        - name: docker build
          run: |
             docker buildx build \
-            -f post/Dockerfile \
-            -t ${{ secrets.ACTOR_DOCKER_HUB }}/postgres:demo \
-            post/
+            -f Dockerfile \
+            -t ${{ secrets.ACTOR_DOCKER_HUB }}/postgres:demo .
+           
        - name: docker push
          run: docker push ${{ secrets.ACTOR_DOCKER_HUB }}/postgres:demo
 
