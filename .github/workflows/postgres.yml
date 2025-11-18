@@ -1,7 +1,7 @@
 name: "postgres-build"
 on:
   push:
-    branches: demo-postgres
+    branches: post
 
 jobs:
   build-and-run:
