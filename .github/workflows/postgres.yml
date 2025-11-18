@@ -19,6 +19,9 @@ jobs:
          with:
           username: ${{ secrets.ACTOR_DOCKER_HUB }}
           password: ${{ secrets.RELEASE_DOCKER_HUB }}
+          
+       - name: check the dir
+         run: pwd
     
        - name: docker build
          run: |
