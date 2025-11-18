@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.RELEASE_DOCKER_HUB }}
     
        - name: docker build
-         run: docker buildx build -t ${{ secrets.ACTOR_DOCKER_HUB }}/postgres:demo
+         run: docker buildx build -t ${{ secrets.ACTOR_DOCKER_HUB }}/postgres:demo.
        - name: docker push
          run: docker push ${{ secrets.ACTOR_DOCKER_HUB }}/postgres:demo
 
