@@ -23,6 +23,6 @@ jobs:
        - name: docker build
          run: docker build -t ${{ secrets.ACTOR_DOCKER_HUB }}/postgres:demo
        - name: docker push
-          run: |
+         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/my-postgres:latest
 
